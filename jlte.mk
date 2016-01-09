@@ -1,3 +1,4 @@
+
 LOCAL_PATH := device/samsung/jlte
 
 PRODUCT_AAPT_CONFIG := hdpi
@@ -44,11 +45,12 @@ frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/andro
 frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
 frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
-$(call inherit-product-if-exists, vendor/samsung/galaxyJLTE/newman.mk)
+$(call inherit-product-if-exists, vendor/samsung/jlte/jlte.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-PRODUCT_NAME := newman
+
+PRODUCT_NAME := cm_jlte
 PRODUCT_DEVICE := galaxyJLTE
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
