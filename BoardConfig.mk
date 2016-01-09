@@ -1,3 +1,5 @@
+LOCAL_PATH := device/samsung/jlte
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi-v7a
